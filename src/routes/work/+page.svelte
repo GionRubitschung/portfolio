@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { setContext } from 'svelte';
 
-	setContext('pageTitle', 'About me');
+	setContext('pageTitle', 'My Experience');
 </script>
 
-<h1>About Me Page</h1>
+<h1>Work Experience</h1>

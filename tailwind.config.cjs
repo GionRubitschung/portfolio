@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
 	darkMode: 'class',
 	content: [
 		'./src/**/*.{html,js,svelte,ts}',
-		import('path').join(require.resolve(
+		require('path').join(require.resolve(
 			'@skeletonlabs/skeleton'),
 			'../**/*.{html,js,svelte,ts}'
 		)
@@ -12,6 +13,6 @@ module.exports = {
 		extend: {},
 	},
 	plugins: [
-		...import('@skeletonlabs/skeleton/tailwind/skeleton.cjs')()
+		...require('@skeletonlabs/skeleton/tailwind/skeleton.cjs')()
 	]
 }
