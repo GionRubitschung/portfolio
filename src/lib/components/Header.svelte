@@ -1,7 +1,7 @@
 <script lang="ts">
+	import { AppBar, LightSwitch } from '@skeletonlabs/skeleton';
 	import { currentRoute, routes } from '$lib/stores';
 	import Icon from '@iconify/svelte';
-	import { AppBar, LightSwitch, RadioGroup, RadioItem } from '@skeletonlabs/skeleton';
 </script>
 
 <AppBar gridColumns="grid-cols-3" slotDefault="place-self-center" slotTrail="place-content-end">
@@ -10,11 +10,16 @@
 	</svelte:fragment>
 	<h1 class="text-2xl font-medium">
 		<div class="flex gap-2">
-			{#each $routes as route}
-				<button class={`btn ${route.path === $currentRoute.path ? 'variant-filled' : ''}`}
-					><a href={route.path}>{route.name}</a></button
-				>
-			{/each}
+			<div class="border border-solid border-primary-50 p-4 rounded-full transition-all">
+				{#each $routes as route (route.path)}
+					<a
+						href={route.path}
+						class={`btn ${route.path === $currentRoute.path ? 'variant-filled' : ''}`}
+					>
+						{route.name}
+					</a>
+				{/each}
+			</div>
 		</div>
 	</h1>
 	<svelte:fragment slot="trail">
