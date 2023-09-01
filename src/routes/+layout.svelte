@@ -9,9 +9,9 @@
 
 <AppShell regionPage="relative" slotPageHeader="sticky top-0 z-10">
 	<svelte:fragment slot="header"><Header /></svelte:fragment>
-	<div class="p-4">
-		<AnimatedRoute>
+	<AnimatedRoute>
+		<main class="container">
 			<slot />
-		</AnimatedRoute>
-	</div>
+		</main>
+	</AnimatedRoute>
 </AppShell>
