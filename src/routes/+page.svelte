@@ -5,19 +5,18 @@
 	setContext('pageTitle', 'Gion R.');
 </script>
 
-<div class="flex flex-col gap-1 justify-stretch min-h-[80vh] min-w-screen overflow-">
-	<div class="flex-grow flex items-center">
-		<div class="flex-grow">
-			<!-- Content below header -->
-			<div class="h-5/6 flex items-center justify-center">
-				<h1 class="text-5xl font-semibold">
-					Gion Andri R. <p class="text-primary-400 font-normal">DevOps Engineer</p>
-				</h1>
+<div class="grid grid-cols-1 grid-rows-1 w-screen min-h-[80vh] content-center">
+	<div class="flex items-center justify-center">
+		<div class="grid grid-cols-12">
+			<div class="col-span-3 col-start-3 flex items-center">
+				<div>
+					<h1 class="text-5xl font-semibold">
+						Gion Andri R. <p class="text-primary-300 font-normal">DevOps Engineer</p>
+					</h1>
+					<a href="/about" class="anchor text-sm ml-[1.5px]">Read more</a>
+				</div>
 			</div>
-		</div>
-		<div class="w-1/3 h-full flex items-center justify-end">
-			<!-- Image on the right -->
-			<img alt="Profile" src={profile} class="max-h-1/2 mx-auto" />
+			<img alt="Profile" src={profile} class="col-span-3 col-start-7 rounded-3xl" />
 		</div>
 	</div>
 </div>

@@ -1,10 +1,10 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import { page } from '$app/stores';
 	import { send, receive } from '$lib/crossfade';
-</script>
+</script> -->
 
-{#key $page.url}
-	<div out:send={{ key: $page.url }} in:receive={{ key: $page.url }}>
-		<slot />
-	</div>
-{/key}
+<!-- {#key $page.url}
+	<div out:send={{ key: $page.url }} in:receive={{ key: $page.url }}> -->
+<slot />
+<!-- </div>
+{/key} -->
