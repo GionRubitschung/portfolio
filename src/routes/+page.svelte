@@ -21,7 +21,7 @@
 			<img
 				alt="Profile"
 				src={profile}
-				class="w-64 rounded-3xl row-start-1 place-self-center md:place-self-start md:w-full md:col-span-3 md:col-start-7"
+				class="p-4 w-64 rounded-3xl row-start-1 place-self-center md:p-0 md:place-self-start md:w-full md:col-span-3 md:col-start-7"
 			/>
 		</div>
 	</div>

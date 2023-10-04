@@ -11,11 +11,11 @@ export const routes = readable<Route[]>([
 		path: '/work',
 	},
 	{
-		name: 'Contact Me',
-		path: '/contact',
-	},
-	{
 		name: 'Projects',
 		path: '/projects',
+	},
+	{
+		name: 'Contact Me',
+		path: '/contact',
 	},
 ]);

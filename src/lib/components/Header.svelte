@@ -68,6 +68,9 @@
 							{route.name}
 						</a>
 					{/each}
+					<div class="w-full flex place-content-center">
+						<LightSwitch />
+					</div>
 				</div>
 			</div>
 		</div>
