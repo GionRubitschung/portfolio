@@ -7,17 +7,16 @@
 
 <div class="grid grid-cols-1 grid-rows-1 w-screen min-h-[80vh] content-center">
 	<div class="flex items-center justify-center">
-		<div class="grid grid-rows-1 lg:grid-cols-12">
-			<!-- FIXME: layout for 1020px width breakpoint looks weird -->
+		<div class="grid grid-rows-1 xl:grid-cols-12">
 			<img
 				alt="Profile"
 				src={profile}
-				class="p-4 w-64 rounded-3xl place-self-center lg:p-0 lg:place-self-start lg:w-full lg:col-span-3 lg:col-start-7 md:hidden lg:hidden"
+				class="p-4 w-64 rounded-3xl place-self-center xl:p-0 xl:place-self-start xl:w-full xl:col-span-3 xl:col-start-7 md:hidden xl:hidden"
 			/>
 			<div
-				class="flex place-content-center items-center lg:place-content-start lg:items-start lg:col-span-3 lg:col-start-3"
+				class="flex place-content-center items-center xl:place-content-start xl:items-start xl:col-span-3 xl:col-start-3"
 			>
-				<div class="px-4 pb-4 lg:px-0 lg:pb-0">
+				<div class="px-4 pb-4 xl:px-0 xl:pb-0">
 					<div class="flex justify-between items-end">
 						<h1 class="text-4xl font-semibold md:text-5xl">
 							Gion Andri R. <p class="text-primary-300 font-normal">DevOps Engineer</p>
@@ -25,7 +24,7 @@
 						<img
 							alt="Profile"
 							src={profile}
-							class="hidden w-64 rounded-3xl place-self-end md:inline lg:p-0 lg:place-self-start lg:w-full lg:col-span-3 lg:col-start-7 lg:hidden"
+							class="hidden w-64 rounded-3xl place-self-end md:inline xl:p-0 xl:place-self-start xl:w-full xl:col-span-3 xl:col-start-7 xl:hidden"
 						/>
 					</div>
 					<div class="mt-4">
@@ -37,10 +36,9 @@
 						</p>
 						<h2 class="text-2xl text-secondary-400">What I am studying</h2>
 						<p class="mb-4">
-							<!-- TODO: add links to bfh and studiengang -->
-							In 2023, I started my Bachelor of Science in Data Engineering at the Bern University of
-							Applied Sciences. I am completing my studies on a part-time basis. At uni I learn software
-							engineering in combination with machine learning.
+							In 2023, I started my Bachelor of Science in Data Engineering at the Bern University
+							of Applied Sciences. I am completing my studies on a part-time basis. At uni I learn
+							software engineering in combination with machine learning.
 						</p>
 						<h2 class="text-2xl text-secondary-400">What I do during my free time</h2>
 						<p>
@@ -54,7 +52,7 @@
 			<img
 				alt="Profile"
 				src={profile}
-				class="hidden p-4 w-64 rounded-3xl place-self-center lg:p-0 lg:place-self-start lg:w-full lg:col-span-3 lg:col-start-7 lg:inline"
+				class="hidden p-4 w-64 rounded-3xl place-self-center xl:p-0 xl:place-self-start xl:w-full xl:col-span-3 xl:col-start-7 xl:inline"
 			/>
 		</div>
 	</div>
